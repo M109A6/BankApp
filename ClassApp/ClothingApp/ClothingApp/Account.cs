@@ -16,15 +16,6 @@ namespace ClothingApp
         public string Address { get; set; }
         public string Payment { get; set; }
         
-        /// <summary>
-        /// Item Properties
-        /// </summary>
-
-        public string ClothingType { get; set; }
-        public string Color { get; set; }
-        public string Size { get; set; }
-        public decimal Quantity { get; set; }
-
         #endregion
     }
 }
