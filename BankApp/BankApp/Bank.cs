@@ -11,7 +11,7 @@ namespace BankApp
         /// <summary>
         /// Create an account in the back
         /// </summary>
-        /// <param name="emailAddress">Email Address associasted to the account.</param>
+        /// <param name="emailAddress">Email Address associated to the account.</param>
         /// <param name="accountType">Type of account.</param>
         /// <param name="initialAmount">Initial amount deposited into the account.</param>
         /// <returns></returns>

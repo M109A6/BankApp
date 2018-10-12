@@ -14,7 +14,7 @@ namespace BankApp
     }
 
     /// <summary>
-    /// Defines an accout for a bank
+    /// Defines an account for a bank.
     /// </summary>
     class Account
     {

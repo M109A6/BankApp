@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADGONZ\\Source\\Repos\\adgonz\\BankApp\\BankApp\\BankApp.csproj",
+      "projectUniqueName": "C:\\Users\\ADGONZ\\source\\git\\BankApp\\BankApp\\BankApp.csproj",
       "projectName": "BankApp",
-      "projectPath": "C:\\Users\\ADGONZ\\Source\\Repos\\adgonz\\BankApp\\BankApp\\BankApp.csproj",
+      "projectPath": "C:\\Users\\ADGONZ\\source\\git\\BankApp\\BankApp\\BankApp.csproj",
       "packagesPath": "C:\\Users\\ADGONZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADGONZ\\Source\\Repos\\adgonz\\BankApp\\BankApp\\obj\\",
+      "outputPath": "C:\\Users\\ADGONZ\\source\\git\\BankApp\\BankApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
