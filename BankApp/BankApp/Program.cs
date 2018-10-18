@@ -6,9 +6,9 @@ namespace BankApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("******************");
+            Console.WriteLine("***********************");
             Console.WriteLine("Welcome to Bank of Code");
-            Console.WriteLine("******************");
+            Console.WriteLine("***********************");
             while (true)
             {
                 Console.WriteLine("0. Exit");
@@ -25,7 +25,7 @@ namespace BankApp
                     case "0":
                         return;
                     case "1":
-                        Console.Write("Email Addres: ");
+                        Console.Write("Email Address: ");
                         var emailAddress = Console.ReadLine();
 
                         var accountTypes = Enum.GetNames(typeof(TypeOfAccount));
@@ -42,7 +42,7 @@ namespace BankApp
                         var accountType = Enum.Parse<TypeOfAccount>(accountTypes[accountTypeOption - 1]);
 
                         var account = Bank.CreateAccount(emailAddress, accountType, initialDeposit);
-                        Console.WriteLine($"Acount Number: {account.AccountNumber}, Balance: {account.Balance:C}, Account Type: {account.AccountType}");
+                        Console.WriteLine($"Account Number: {account.AccountNumber}, Balance: {account.Balance:C}, Account Type: {account.AccountType}");
 
                         break;
                     case "2":
