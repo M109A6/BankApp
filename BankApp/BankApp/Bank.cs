@@ -15,8 +15,14 @@ namespace BankApp
         /// <param name="accountType">Type of account.</param>
         /// <param name="initialAmount">Initial amount deposited into the account.</param>
         /// <returns></returns>
+        /// <exception cref="ArgumentNullException" />
         public static Account CreateAccount(string emailAddress, TypeOfAccount accountType = TypeOfAccount.Checking, decimal initialAmount=0)
         {
+            if (string.IsNullOrEmpty(emailAddress))
+            {
+                throw new ArgumentNullException(nameof(emailAddress), "Email address is required!");
+            }
+
             var account = new Account
             {
                 EmailAddress = emailAddress,
@@ -39,7 +45,21 @@ namespace BankApp
 
         public static void Deposit(int accountNumber, decimal amount)
         {
-            accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
+            var account = accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
+            if (account == null)
+            {
+                throw new ArgumentException("accountNumber", "Invalid account number!");
+            }
+            account.Deposit(amount);
+        }
+        public static void Withdraw(int accountNumber, decimal amount)
+        {
+            var account = accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
+            if (account == null)
+            {
+                throw new ArgumentException("Invalid account number!", nameof(accountNumber));
+            }
+            account.Withdraw(amount);
         }
     }
 }

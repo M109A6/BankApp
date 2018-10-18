@@ -54,8 +54,11 @@ namespace BankApp
 
         public void Withdraw(decimal amount)
         {
+            if(amount > Balance)
+            {
+                throw new NSFException("Insufficient funds!");
+            }
             Balance -= amount;
-       
         }
         #endregion
     }
