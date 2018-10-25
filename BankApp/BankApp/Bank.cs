@@ -7,7 +7,7 @@ namespace BankApp
 {
     static class Bank
     {
-        private static List<Account> accounts = new List<Account>();
+        private static BankModel db = new BankModel();
         /// <summary>
         /// Create an account in the back
         /// </summary>
@@ -33,19 +33,20 @@ namespace BankApp
             {
                 account.Deposit(initialAmount);
             }
-            accounts.Add(account);
+            db.Accounts.Add(account);
+            db.SaveChanges();
             return account;
         }
 
         public static IEnumerable<Account> GetAllAccounts()
         {
-            return accounts;
+            return db.Accounts;
         }
 
 
         public static void Deposit(int accountNumber, decimal amount)
         {
-            var account = accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
+            var account = db.Accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
             if (account == null)
             {
                 throw new ArgumentException("accountNumber", "Invalid account number!");
@@ -54,7 +55,7 @@ namespace BankApp
         }
         public static void Withdraw(int accountNumber, decimal amount)
         {
-            var account = accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
+            var account = db.Accounts.SingleOrDefault(a => a.AccountNumber == accountNumber);
             if (account == null)
             {
                 throw new ArgumentException("Invalid account number!", nameof(accountNumber));
