@@ -11,7 +11,7 @@ namespace BankApp
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           optionsBuilder.UseSqlServer("");
+           optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BankDb;Integrated Security=True;Connect Timeout=30;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

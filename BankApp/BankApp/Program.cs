@@ -58,7 +58,7 @@ namespace BankApp
                         {
                             Console.Write($"Error: {ax.Message}");
                         }
-                        catch
+                        catch(Exception ex)
                         {
                             Console.WriteLine("Something went wrong! Please try again.");
                         }

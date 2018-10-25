@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BankApp
@@ -28,7 +29,7 @@ namespace BankApp
         public string EmailAddress { get; set; }
         public decimal Balance { get; private set; }
         public TypeOfAccount AccountType { get; set; }
-        public DateTime CreatedDate { get;  }
+        public DateTime CreatedDate { get; set; }
         #endregion
 
         #region Constructors
