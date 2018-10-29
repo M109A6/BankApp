@@ -30,3 +30,14 @@ C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.runti
 C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.runtimeconfig.dev.json
 C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.dll
 C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.pdb
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.deps.json
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.runtimeconfig.json
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.runtimeconfig.dev.json
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.dll
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\bin\Debug\netcoreapp2.0\BankApp.pdb
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.csprojResolveAssemblyReference.cache
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.csproj.CoreCompileInputs.cache
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.AssemblyInfoInputs.cache
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.AssemblyInfo.cs
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.dll
+C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.pdb

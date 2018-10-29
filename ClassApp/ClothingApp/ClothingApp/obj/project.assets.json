@@ -674,11 +674,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\adgonz\\Documents\\GitHub\\ClassApp\\ClothingApp\\ClothingApp\\ClothingApp.csproj",
+      "projectUniqueName": "C:\\Users\\adgonz\\Documents\\GitHub\\BankApp\\ClassApp\\ClothingApp\\ClothingApp\\ClothingApp.csproj",
       "projectName": "ClothingApp",
-      "projectPath": "C:\\Users\\adgonz\\Documents\\GitHub\\ClassApp\\ClothingApp\\ClothingApp\\ClothingApp.csproj",
+      "projectPath": "C:\\Users\\adgonz\\Documents\\GitHub\\BankApp\\ClassApp\\ClothingApp\\ClothingApp\\ClothingApp.csproj",
       "packagesPath": "C:\\Users\\adgonz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adgonz\\Documents\\GitHub\\ClassApp\\ClothingApp\\ClothingApp\\obj\\",
+      "outputPath": "C:\\Users\\adgonz\\Documents\\GitHub\\BankApp\\ClassApp\\ClothingApp\\ClothingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
