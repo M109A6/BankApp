@@ -40,6 +40,38 @@ namespace BankApp.Migrations
 
                     b.ToTable("Accounts");
                 });
+
+            modelBuilder.Entity("BankApp.Transaction", b =>
+                {
+                    b.Property<int>("TransactionID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AccountNumber");
+
+                    b.Property<decimal>("Amount");
+
+                    b.Property<string>("Descrition");
+
+                    b.Property<DateTime>("TransactionDate");
+
+                    b.Property<int>("TypeOfTransaction");
+
+                    b.HasKey("TransactionID")
+                        .HasName("PK_Transactions");
+
+                    b.HasIndex("AccountNumber");
+
+                    b.ToTable("Transactions");
+                });
+
+            modelBuilder.Entity("BankApp.Transaction", b =>
+                {
+                    b.HasOne("BankApp.Account", "Account")
+                        .WithMany("Transactions")
+                        .HasForeignKey("AccountNumber")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
 #pragma warning restore 612, 618
         }
     }

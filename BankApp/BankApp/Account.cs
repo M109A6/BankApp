@@ -5,7 +5,6 @@ using System.Text;
 
 namespace BankApp
 {   
-
     enum TypeOfAccount
     {
         Savings,
@@ -30,6 +29,8 @@ namespace BankApp
         public decimal Balance { get; private set; }
         public TypeOfAccount AccountType { get; set; }
         public DateTime CreatedDate { get; set; }
+
+        public virtual ICollection<Transaction> Transactions { get; set; }
         #endregion
 
         #region Constructors

@@ -41,3 +41,4 @@ C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0
 C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.AssemblyInfo.cs
 C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.dll
 C:\Users\adgonz\Documents\GitHub\BankApp\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.pdb
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Debug\netcoreapp2.0\BankApp.csprojResolveAssemblyReference.cache

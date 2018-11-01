@@ -52,6 +52,19 @@ namespace BankApp
                 throw new ArgumentException("accountNumber", "Invalid account number!");
             }
             account.Deposit(amount);
+
+            var transaction = new Transaction
+            {
+                Descrition = "Bank Deposit",
+                TransactionDate = DateTime.Now,
+                TypeOfTransaction = TransactionType.Credit,
+                Amount = amount,
+                AccountNumber = accountNumber
+
+            };
+            db.Transactions.Add(transaction);
+
+            db.SaveChanges();
         }
         public static void Withdraw(int accountNumber, decimal amount)
         {
@@ -61,6 +74,26 @@ namespace BankApp
                 throw new ArgumentException("Invalid account number!", nameof(accountNumber));
             }
             account.Withdraw(amount);
+
+            var transaction = new Transaction
+            {
+                Descrition = "Bank Withdrawl",
+                TransactionDate = DateTime.Now,
+                TypeOfTransaction = TransactionType.Debit,
+                Amount = amount,
+                AccountNumber = accountNumber
+
+            };
+            db.Transactions.Add(transaction);
+
+            db.SaveChanges();
         }
+
+        public static IEnumerable<Transaction> GetAllTransaction(int accountNumber)
+        {
+            return db.Transactions.Where(t => t.AccountNumber == accountNumber).OrderByDescending(t => t.TransactionDate);
+        }
+
+
     }
 }

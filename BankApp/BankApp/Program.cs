@@ -16,6 +16,7 @@ namespace BankApp
                 Console.WriteLine("2. Deposit Money.");
                 Console.WriteLine("3. Withdraw Money.");
                 Console.WriteLine("4. Print all accounts.");
+                Console.WriteLine("5. Print all transaction.");
 
                 Console.Write("Please select an option: ");
                 var option = Console.ReadLine();
@@ -98,6 +99,20 @@ namespace BankApp
                         break;
                     case "4":
                         PrintAllAccounts();
+                        break;
+                    case "5":
+                        PrintAllAccounts();
+                        Console.Write("Account number ");
+                        var anumbr = Convert.ToInt32(Console.ReadLine());
+
+                        var transactions = Bank.GetAllTransaction(anumbr);
+                        foreach (var transaction in transactions)
+                        {
+                            Console.WriteLine($"Transaction Date: {transaction.TransactionDate}, Transaction Amount: {transaction.Amount}, Transaction Type: {transaction.TypeOfTransaction}");
+                        }
+
+
+
                         break;
                     default:
                         break;
