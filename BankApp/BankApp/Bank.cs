@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BankApp
 {
-    static class Bank
+    public static class Bank
     {
         private static BankModel db = new BankModel();
         /// <summary>
@@ -38,9 +38,9 @@ namespace BankApp
             return account;
         }
 
-        public static IEnumerable<Account> GetAllAccounts()
+        public static IEnumerable<Account> GetAllAccounts(string emailAddress)
         {
-            return db.Accounts;
+            return db.Accounts.Where( a => a.EmailAddress == emailAddress);
         }
 
 
@@ -94,6 +94,10 @@ namespace BankApp
             return db.Transactions.Where(t => t.AccountNumber == accountNumber).OrderByDescending(t => t.TransactionDate);
         }
 
+        public static Account GetAccountDetails(int accountNumber)
+        {
+            return db.Accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
+        }
 
     }
 }

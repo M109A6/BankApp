@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BankApp
 {
-    enum TransactionType
+    public enum TransactionType
     {
         Credit,
         Debit
     }
-    class Transaction
+    public class Transaction
     {
         public int TransactionID { get; set; }
         public DateTime TransactionDate { get; set; }
