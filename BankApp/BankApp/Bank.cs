@@ -89,7 +89,7 @@ namespace BankApp
             db.SaveChanges();
         }
 
-        public static IEnumerable<Transaction> GetAllTransaction(int accountNumber)
+        public static IEnumerable<Transaction> GetAllTransactions(int accountNumber)
         {
             return db.Transactions.Where(t => t.AccountNumber == accountNumber).OrderByDescending(t => t.TransactionDate);
         }
@@ -97,6 +97,27 @@ namespace BankApp
         public static Account GetAccountDetails(int accountNumber)
         {
             return db.Accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
+        }
+
+        public static void EditAccount(Account account)
+        {
+            var oldAccount = Bank.GetAccountDetails(account.AccountNumber);
+            oldAccount.EmailAddress = account.EmailAddress;
+            oldAccount.AccountType = account.AccountType;
+            db.Update(oldAccount);
+            db.SaveChanges();
+        }
+
+        public static void DeleteAccount(int accountNumber)
+        {
+            var account = Bank.GetAccountDetails(accountNumber);
+            db.Accounts.Remove(account);
+            db.SaveChanges();
+        }
+
+        public static bool AccountExists(int id)
+        {
+            return db.Accounts.Any(e => e.AccountNumber == id);
         }
 
     }

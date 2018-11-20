@@ -1,0 +1,11 @@
+C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Release\netcoreapp2.0\BankApp.deps.json
+C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Release\netcoreapp2.0\BankApp.runtimeconfig.json
+C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Release\netcoreapp2.0\BankApp.runtimeconfig.dev.json
+C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Release\netcoreapp2.0\BankApp.dll
+C:\Users\ADGONZ\source\git\BankApp\BankApp\bin\Release\netcoreapp2.0\BankApp.pdb
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Release\netcoreapp2.0\BankApp.csprojAssemblyReference.cache
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Release\netcoreapp2.0\BankApp.csproj.CoreCompileInputs.cache
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Release\netcoreapp2.0\BankApp.AssemblyInfoInputs.cache
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Release\netcoreapp2.0\BankApp.AssemblyInfo.cs
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Release\netcoreapp2.0\BankApp.dll
+C:\Users\ADGONZ\source\git\BankApp\BankApp\obj\Release\netcoreapp2.0\BankApp.pdb
